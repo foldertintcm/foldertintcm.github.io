@@ -277,18 +277,25 @@ kbd {
 .menu li .chev { margin-left: auto; color: #9a9a9a; }
 .menu hr { border: 0; border-top: 1px solid rgba(255, 255, 255, .1); margin: 4px 6px; }
 
-/* ── desktop.ini, as a card ────────────────────────────────────────── */
-.ini {
-  margin: 0; border-radius: 14px; padding: 26px 28px; overflow-x: auto;
-  background: #0f0f16; border: 1px solid var(--line);
-  box-shadow: 0 40px 100px rgba(0, 0, 0, .55);
-  font: 14px/1.8 ui-monospace, "Cascadia Code", Consolas, monospace; color: #d6d4dd;
+
+/* ── It stays: the same folder, moment after moment ────────────────── */
+.persist {
+  display: flex; align-items: stretch; justify-content: center; gap: clamp(8px, 1.6vw, 22px);
+  padding: clamp(28px, 4vw, 48px) clamp(16px, 3vw, 36px); border-radius: 18px;
+  background: rgba(255, 255, 255, .03); border: 1px solid var(--line);
 }
-.ini .k { color: var(--sky); }
-.ini .s { color: #ffb86b; }
-.ini .c { color: var(--faint); }
-.ini-head { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; font: 600 13px var(--sans); color: var(--muted); }
-.ini-head img { width: 40px; }
+.moment {
+  flex: 1; max-width: 180px; text-align: center; padding: 18px 10px 16px; border-radius: 14px;
+  background: #15151d; border: 1px solid var(--line);
+}
+.moment img { width: 72%; margin: 0 auto 8px; filter: drop-shadow(0 10px 18px rgba(0, 0, 0, .4)); }
+.moment span { display: block; font: 13px "Segoe UI", var(--sans); color: #e8e8e8; }
+.moment em { display: block; margin-top: 10px; font-style: normal; font-size: 12px; color: var(--muted); }
+.moment em::before { content: "✓ "; color: #34c759; }
+.persist .arrow { align-self: center; font-style: normal; color: var(--faint); font-size: 20px; }
+.persist-note { margin: 16px 4px 0; font-size: 13px; color: var(--faint); text-align: center; }
+.persist-note code { font: 12px ui-monospace, "Cascadia Code", Consolas, monospace; color: var(--muted); }
+@media (max-width: 520px) { .persist .arrow { display: none; } .persist { gap: 8px; padding: 18px 10px; } .moment { padding: 12px 4px; } }
 
 /* ── Sizes: the same folder, sharp at every size ───────────────────── */
 .sizes {
