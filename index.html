@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FolderTint — Colores para tus carpetas de Windows</title>
+  <meta name="description" content="Clic derecho en una carpeta y elige un color, como en el Mac. 13 colores de Apple o el tuyo propio. Gratis, sin procesos en segundo plano y nada sale de tu equipo.">
+  <meta name="theme-color" content="#07070b">
+  <meta property="og:title" content="FolderTint">
+  <meta property="og:description" content="Colores para las carpetas de Windows 10 y 11, con un clic derecho.">
+  <meta property="og:image" content="https://foldertint.github.io/assets/img/es/picker-dark.png">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/png" href="assets/icon-44.png">
+  <link rel="apple-touch-icon" href="assets/icon-150.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <a class="brand" href="#top" aria-label="FolderTint">
+      <img src="assets/icon-44.png" alt="" width="22" height="22">
+      <span>FolderTint</span>
+    </a>
+    <nav class="links" aria-label="Secciones">
+      <a href="#colorear" data-i18n="nav.tint">Colorear</a>
+      <a href="#personalizar" data-i18n="nav.custom">Personalizar</a>
+      <a href="#permanente" data-i18n="nav.stays">Se queda</a>
+      <a href="#ligero" data-i18n="nav.light">Ligero</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Idioma / Language">
+      <button type="button" data-lang="es" aria-pressed="true">ES</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+    <a class="cta" href="#descargar" data-i18n="nav.download">Descargar</a>
+  </header>
+
+  <aside class="rail" aria-label="Capítulos">
+    <ol>
+      <li><a href="#top"><span>00</span><em data-i18n="rail.intro">Inicio</em></a></li>
+      <li><a href="#colorear"><span>01</span><em data-i18n="nav.tint">Colorear</em></a></li>
+      <li><a href="#personalizar"><span>02</span><em data-i18n="nav.custom">Personalizar</em></a></li>
+      <li><a href="#tema"><span>03</span><em data-i18n="nav.theme">Claro u oscuro</em></a></li>
+      <li><a href="#permanente"><span>04</span><em data-i18n="nav.stays">Se queda</em></a></li>
+      <li><a href="#ligero"><span>05</span><em data-i18n="nav.light">Ligero</em></a></li>
+      <li><a href="#descargar"><span>06</span><em data-i18n="nav.download">Descargar</em></a></li>
+    </ol>
+    <div class="rail-progress"><i></i></div>
+  </aside>
+
+  <main>
+    <!-- 00 · Hero -->
+    <section class="hero" id="top" data-chapter>
+      <div class="glow glow-a"></div>
+      <div class="glow glow-b"></div>
+      <div class="hero-shot">
+        <div class="wall" role="img" aria-label="Las trece carpetas de colores de FolderTint y la de color personalizado" data-i18n-label="alt.wall">
+          <figure style="--i:0"><img src="assets/folders/red.png" alt="" width="256" height="256"><figcaption data-i18n="c.red">Rojo</figcaption></figure>
+          <figure style="--i:1"><img src="assets/folders/orange.png" alt="" width="256" height="256"><figcaption data-i18n="c.orange">Naranja</figcaption></figure>
+          <figure style="--i:2"><img src="assets/folders/yellow.png" alt="" width="256" height="256"><figcaption data-i18n="c.yellow">Amarillo</figcaption></figure>
+          <figure style="--i:3"><img src="assets/folders/green.png" alt="" width="256" height="256"><figcaption data-i18n="c.green">Verde</figcaption></figure>
+          <figure style="--i:4"><img src="assets/folders/mint.png" alt="" width="256" height="256"><figcaption data-i18n="c.mint">Menta</figcaption></figure>
+          <figure style="--i:5"><img src="assets/folders/teal.png" alt="" width="256" height="256"><figcaption data-i18n="c.teal">Turquesa</figcaption></figure>
+          <figure style="--i:6"><img src="assets/folders/cyan.png" alt="" width="256" height="256"><figcaption data-i18n="c.cyan">Celeste</figcaption></figure>
+          <figure style="--i:7"><img src="assets/folders/blue.png" alt="" width="256" height="256"><figcaption data-i18n="c.blue">Azul</figcaption></figure>
+          <figure style="--i:8"><img src="assets/folders/indigo.png" alt="" width="256" height="256"><figcaption data-i18n="c.indigo">Índigo</figcaption></figure>
+          <figure style="--i:9"><img src="assets/folders/purple.png" alt="" width="256" height="256"><figcaption data-i18n="c.purple">Morado</figcaption></figure>
+          <figure style="--i:10"><img src="assets/folders/pink.png" alt="" width="256" height="256"><figcaption data-i18n="c.pink">Rosa</figcaption></figure>
+          <figure style="--i:11"><img src="assets/folders/brown.png" alt="" width="256" height="256"><figcaption data-i18n="c.brown">Marrón</figcaption></figure>
+          <figure style="--i:12"><img src="assets/folders/gray.png" alt="" width="256" height="256"><figcaption data-i18n="c.gray">Gris</figcaption></figure>
+          <figure class="more" style="--i:13"><img src="assets/icon-256.png" alt="" width="256" height="256"><figcaption data-i18n="c.custom">El tuyo</figcaption></figure>
+        </div>
+      </div>
+      <div class="hero-copy">
+        <p class="eyebrow"><span>00</span> · <span data-i18n="hero.eyebrow">Para Windows 10 y 11</span></p>
+        <h1 data-i18n="hero.title">Tus carpetas,<br><em>a todo color</em>.</h1>
+        <p class="lede" data-i18n="hero.lede">Clic derecho en una carpeta y elige un color, como en el Mac. Encuentra tus proyectos de un vistazo, sin cambiar nada más de tu forma de trabajar.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#descargar" data-i18n="hero.cta">Descargar gratis</a>
+          <a class="btn btn-ghost" href="#colorear" data-i18n="hero.tour">Ver cómo funciona ↓</a>
+        </div>
+      </div>
+      <dl class="stats">
+        <div><dt data-count="13">13</dt><dd data-i18n="stats.colours">colores de Apple, y el tuyo propio</dd></div>
+        <div><dt data-count="860">860</dt><dd data-i18n="stats.installer">KB de instalador</dd></div>
+        <div><dt data-count="0">0</dt><dd data-i18n="stats.background">procesos en segundo plano</dd></div>
+        <div><dt data-count="0">0</dt><dd data-i18n="stats.data">datos enviados a internet</dd></div>
+      </dl>
+    </section>
+
+    <!-- 01 · Colorear -->
+    <section class="chapter" id="colorear" data-chapter>
+      <div class="copy">
+        <p class="eyebrow"><span>01</span> · <span data-i18n="nav.tint">Colorear</span></p>
+        <h2 data-i18n="tin.title">Un clic derecho. <em>Trece colores</em>.</h2>
+        <p data-i18n="tin.body">FolderTint se suma al menú del Explorador. Elige un color y la carpeta cambia al instante, con iconos dibujados para verse nítidos en cualquier vista, de los detalles a los iconos extra grandes.</p>
+        <ul class="list">
+          <li data-i18n="tin.l1">Sobre una carpeta, o en el fondo de una carpeta abierta</li>
+          <li data-i18n="tin.l2">Varias carpetas seleccionadas a la vez</li>
+          <li data-i18n="tin.l3">«Quitar color» la deja como estaba</li>
+        </ul>
+        <p class="note" data-i18n="tin.note">En Windows 11 está en «Mostrar más opciones» (o <kbd>Mayús + F10</kbd>). El menú habla español o inglés, como tu Windows.</p>
+      </div>
+      <figure class="frame reveal">
+        <div class="explorer" role="img" aria-label="El menú contextual del Explorador con el submenú de FolderTint abierto" data-i18n-label="alt.menu">
+          <div class="row"><img src="assets/folders/gray.png" alt=""><span data-i18n="f.archive">Archivo</span><span data-i18n="f.type">Carpeta de archivos</span></div>
+          <div class="row"><img src="assets/folders/purple.png" alt=""><span data-i18n="f.clients">Clientes</span><span data-i18n="f.type">Carpeta de archivos</span></div>
+          <div class="row selected"><img src="assets/folders/pink.png" alt=""><span data-i18n="f.design">Diseño</span><span data-i18n="f.type">Carpeta de archivos</span></div>
+          <div class="row"><img src="assets/folders/blue.png" alt=""><span data-i18n="f.docs">Documentos</span><span data-i18n="f.type">Carpeta de archivos</span></div>
+          <div class="row"><img src="assets/folders/green.png" alt=""><span data-i18n="f.invoices">Facturas 2026</span><span data-i18n="f.type">Carpeta de archivos</span></div>
+          <div class="row"><img src="assets/folders/orange.png" alt=""><span data-i18n="f.travel">Fotos de viaje</span><span data-i18n="f.type">Carpeta de archivos</span></div>
+          <div class="row"><img src="assets/folders/red.png" alt=""><span data-i18n="f.music">Música</span><span data-i18n="f.type">Carpeta de archivos</span></div>
+          <div class="row"><img src="assets/folders/indigo.png" alt=""><span data-i18n="f.projects">Proyectos</span><span data-i18n="f.type">Carpeta de archivos</span></div>
+          <div class="row"><img src="assets/folders/mint.png" alt=""><span data-i18n="f.recipes">Recetas</span><span data-i18n="f.type">Carpeta de archivos</span></div>
+          <div class="row"><img src="assets/folders/brown.png" alt=""><span data-i18n="f.taxes">Impuestos</span><span data-i18n="f.type">Carpeta de archivos</span></div>
+          <div class="menu main" aria-hidden="true">
+            <ul>
+              <li class="dim" data-i18n="m.open">Abrir</li>
+              <li class="dim" data-i18n="m.tab">Abrir en nueva pestaña</li>
+              <li class="dim" data-i18n="m.window">Abrir en nueva ventana</li>
+              <li class="dim" data-i18n="m.pin">Anclar a Acceso rápido</li>
+              <li class="on"><img src="assets/icon-44.png" alt="">FolderTint<span class="chev">›</span></li>
+              <li class="dim" data-i18n="m.path">Copiar como ruta de acceso</li>
+              <hr>
+              <li class="dim" data-i18n="m.cut">Cortar</li>
+              <li class="dim" data-i18n="m.copy">Copiar</li>
+              <li class="dim" data-i18n="m.rename">Cambiar nombre</li>
+              <li class="dim" data-i18n="m.props">Propiedades</li>
+            </ul>
+          </div>
+          <div class="menu sub" aria-hidden="true">
+            <ul>
+              <li><img src="assets/folders/red.png" alt=""><span data-i18n="c.red">Rojo</span></li>
+              <li><img src="assets/folders/orange.png" alt=""><span data-i18n="c.orange">Naranja</span></li>
+              <li><img src="assets/folders/yellow.png" alt=""><span data-i18n="c.yellow">Amarillo</span></li>
+              <li><img src="assets/folders/green.png" alt=""><span data-i18n="c.green">Verde</span></li>
+              <li><img src="assets/folders/mint.png" alt=""><span data-i18n="c.mint">Menta</span></li>
+              <li><img src="assets/folders/teal.png" alt=""><span data-i18n="c.teal">Turquesa</span></li>
+              <li><img src="assets/folders/cyan.png" alt=""><span data-i18n="c.cyan">Celeste</span></li>
+              <li><img src="assets/folders/blue.png" alt=""><span data-i18n="c.blue">Azul</span></li>
+              <li><img src="assets/folders/indigo.png" alt=""><span data-i18n="c.indigo">Índigo</span></li>
+              <li><img src="assets/folders/purple.png" alt=""><span data-i18n="c.purple">Morado</span></li>
+              <li class="on"><img src="assets/folders/pink.png" alt=""><span data-i18n="c.pink">Rosa</span></li>
+              <li><img src="assets/folders/brown.png" alt=""><span data-i18n="c.brown">Marrón</span></li>
+              <li><img src="assets/folders/gray.png" alt=""><span data-i18n="c.gray">Gris</span></li>
+              <li><img src="assets/icon-44.png" alt=""><span data-i18n="m.custom">Personalizado…</span></li>
+              <hr>
+              <li><i></i><span data-i18n="m.clear">Quitar color</span></li>
+            </ul>
+          </div>
+        </div>
+      </figure>
+    </section>
+
+    <!-- 02 · Personalizar -->
+    <section class="chapter flip" id="personalizar" data-chapter>
+      <div class="copy">
+        <p class="eyebrow"><span>02</span> · <span data-i18n="nav.custom">Personalizar</span></p>
+        <h2 data-i18n="cus.title">Cualquier color. <em>El tuyo</em>.</h2>
+        <p data-i18n="cus.body">«Personalizado…» abre el selector de FolderTint. Arrastra por el cuadro y la barra de tono, o escribe el código HEX de tu marca, y mira la carpeta cambiar antes de aplicarla.</p>
+        <ul class="chips">
+          <li data-i18n="cus.c1">Vista previa en vivo</li>
+          <li data-i18n="cus.c2">Código HEX</li>
+          <li data-i18n="cus.c3">Paleta a un clic</li>
+          <li data-i18n="cus.c4">Tus 6 últimos, también en el menú</li>
+          <li data-i18n="cus.c5">Un solo selector para varias carpetas</li>
+          <li><kbd>Enter</kbd> · <kbd>Esc</kbd></li>
+        </ul>
+      </div>
+      <figure class="frame reveal">
+        <img class="shot" data-shot="picker-dark.png" src="assets/img/es/picker-dark.png" width="1080" height="975" loading="lazy"
+             alt="El selector de color de FolderTint, con la vista previa de la carpeta, el cuadro de color, la barra de tono, la paleta y los colores recientes" data-i18n-alt="alt.picker">
+      </figure>
+    </section>
+
+    <!-- 03 · Claro u oscuro -->
+    <section class="chapter wide" id="tema" data-chapter>
+      <div class="copy center">
+        <p class="eyebrow"><span>03</span> · <span data-i18n="nav.theme">Claro u oscuro</span></p>
+        <h2 data-i18n="the.title">Claro u oscuro, <em>como tu Windows</em>.</h2>
+        <p data-i18n="the.body">El selector sigue el tema de tus aplicaciones, también en la barra de título, y se ve nítido en cualquier escala de pantalla.</p>
+      </div>
+      <figure class="frame duo reveal">
+        <img class="shot" data-shot="picker-dark.png" src="assets/img/es/picker-dark.png" width="1080" height="975" loading="lazy"
+             alt="El selector en modo oscuro" data-i18n-alt="alt.dark">
+        <img class="shot" data-shot="picker-light.png" src="assets/img/es/picker-light.png" width="1080" height="975" loading="lazy"
+             alt="El mismo selector en modo claro" data-i18n-alt="alt.light">
+      </figure>
+    </section>
+
+    <!-- 04 · Se queda -->
+    <section class="chapter flip" id="permanente" data-chapter>
+      <div class="copy">
+        <p class="eyebrow"><span>04</span> · <span data-i18n="nav.stays">Se queda</span></p>
+        <h2 data-i18n="sta.title">Se queda. <em>Aunque reinicies</em>.</h2>
+        <p data-i18n="sta.body">El color se guarda dentro de la propia carpeta, en un pequeño archivo oculto que Windows lee cada vez que la muestra. Es lo mismo que «Propiedades → Personalizar → Cambiar icono», hecho con un clic.</p>
+        <ul class="list">
+          <li data-i18n="sta.l1">Sigue ahí al reiniciar y tras las actualizaciones de Windows</li>
+          <li data-i18n="sta.l2">Viaja con la carpeta si la mueves o le cambias el nombre</li>
+          <li data-i18n="sta.l3">En una unidad USB o de red, se ve en todo equipo con FolderTint</li>
+          <li data-i18n="sta.l4">Al desinstalar, cada carpeta vuelve a su icono de siempre</li>
+        </ul>
+      </div>
+      <figure class="frame reveal">
+        <div class="ini-head"><img src="assets/folders/blue.png" alt="" width="40" height="40"><span data-i18n="sta.file">Proyectos\desktop.ini · oculto</span></div>
+        <pre class="ini"><code><span class="s">[.ShellClassInfo]</span>
+<span class="k">IconResource</span>=%LOCALAPPDATA%\Programs\FolderTint\icons\blue.ico,0</code></pre>
+      </figure>
+    </section>
+
+    <!-- 05 · Ligero -->
+    <section class="chapter" id="ligero" data-chapter>
+      <div class="copy">
+        <p class="eyebrow"><span>05</span> · <span data-i18n="nav.light">Ligero</span></p>
+        <h2 data-i18n="lig.title">Hecho para <em>no notarse</em>.</h2>
+        <p data-i18n="lig.body">Escrito en Rust sobre las API nativas de Windows. No hay nada corriendo en segundo plano: cada opción del menú abre FolderTint, cambia la carpeta y se cierra en un instante.</p>
+        <dl class="specs">
+          <div><dt>0</dt><dd data-i18n="lig.s1">procesos en segundo plano</dd></div>
+          <div><dt>509 KB</dt><dd data-i18n="lig.s2">un único ejecutable</dd></div>
+          <div><dt>1</dt><dd data-i18n="lig.s3">dependencia: las API de Windows</dd></div>
+          <div><dt>0</dt><dd data-i18n="lig.s4">conexiones de red: todo queda en tu equipo</dd></div>
+        </dl>
+        <p class="note" data-i18n="lig.note">Sin administrador: se instala solo para tu usuario y nunca toca las carpetas del sistema ni los iconos que tú elegiste a mano.</p>
+      </div>
+      <figure class="frame reveal">
+        <div class="sizes" role="img" aria-label="La misma carpeta nítida a 16, 24, 32, 48, 64, 128 y 256 píxeles" data-i18n-label="alt.sizes">
+          <figure><img src="assets/folders/purple.png" alt="" width="16" height="16"><figcaption>16</figcaption></figure>
+          <figure><img src="assets/folders/purple.png" alt="" width="24" height="24"><figcaption>24</figcaption></figure>
+          <figure><img src="assets/folders/purple.png" alt="" width="32" height="32"><figcaption>32</figcaption></figure>
+          <figure><img src="assets/folders/purple.png" alt="" width="48" height="48"><figcaption>48</figcaption></figure>
+          <figure><img src="assets/folders/purple.png" alt="" width="64" height="64"><figcaption>64</figcaption></figure>
+          <figure><img src="assets/folders/purple.png" alt="" width="128" height="128"><figcaption>128</figcaption></figure>
+          <figure><img src="assets/folders/purple.png" alt="" width="256" height="256"><figcaption>256 px</figcaption></figure>
+        </div>
+      </figure>
+    </section>
+
+    <!-- 06 · Descargar -->
+    <section class="download" id="descargar" data-chapter>
+      <div class="glow glow-c"></div>
+      <p class="eyebrow"><span>06</span> · <span data-i18n="nav.download">Descargar</span></p>
+      <h2 data-i18n="dl.title">Ponle color<br><em>a tu orden</em>.</h2>
+      <a class="btn btn-primary btn-xl" href="https://github.com/foldertint/foldertint.github.io/releases/latest/download/FolderTint.msi">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M3 5.5 10 4.5v7H3zm8-1.15L21 3v8.5H11zM3 12.5h7v7l-7-1zm8 0h10V21l-10-1.4z"/></svg>
+        <span data-i18n="dl.button">Descargar el instalador MSI</span>
+      </a>
+      <p class="dl-meta"><span data-i18n="dl.meta">Instalador MSI · 860 KB · versión</span> <span data-version>0.3.0</span></p>
+      <p class="dl-note" data-i18n="dl.note">El instalador aún no va firmado: Windows SmartScreen puede avisar al abrirlo (<em>Más información → Ejecutar de todas formas</em>). Comprueba que es el original con su SHA-256.</p>
+      <ul class="dl-facts">
+        <li data-i18n="dl.f1">Windows 10 y 11 de 64 bits</li>
+        <li data-i18n="dl.f2">Se instala para tu usuario, sin pedir administrador</li>
+        <li data-i18n="dl.f3">Una versión nueva se instala encima de la anterior</li>
+        <li data-i18n="dl.f4">Gratis, sin cuenta y sin publicidad</li>
+        <li data-i18n="dl.f5">Código abierto, licencia GPL-3.0</li>
+      </ul>
+      <p class="sha"><span>SHA-256</span> <code data-sha>4281213e9d18ba0dcf6d939b23a5c59eaf39f8baf0fe13e59451a94fb89bee4c</code></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <img src="assets/icon-44.png" alt="" width="18" height="18">
+      <span>FolderTint</span>
+    </div>
+    <nav>
+      <a href="privacy.html" data-i18n="foot.privacy">Privacidad</a>
+      <a href="https://github.com/foldertint/FolderTint" data-i18n="foot.source">Código fuente</a>
+      <a href="https://github.com/foldertint/foldertint.github.io/releases" data-i18n="foot.releases">Versiones</a>
+      <a href="https://github.com/foldertint/foldertint.github.io/issues" data-i18n="foot.support">Soporte</a>
+    </nav>
+    <p>© 2026 FolderTint</p>
+  </footer>
+
+  <script src="assets/site.js"></script>
+</body>
+</html>
