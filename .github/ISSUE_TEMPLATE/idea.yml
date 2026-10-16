@@ -1,5 +1,5 @@
 name: "Sugerencia · Suggestion"
-description: "Una idea para mejorar FolderTint · An idea to improve FolderTint"
+description: "Una idea para mejorar FolderTintCM · An idea to improve FolderTintCM"
 title: "[Sugerencia] "
 labels: ["enhancement"]
 body:
@@ -24,7 +24,7 @@ body:
   - type: input
     id: version
     attributes:
-      label: "Versión de FolderTint (opcional) · FolderTint version (optional)"
+      label: "Versión de FolderTintCM (opcional) · FolderTintCM version (optional)"
       placeholder: "0.3.0"
   - type: checkboxes
     id: privacy
