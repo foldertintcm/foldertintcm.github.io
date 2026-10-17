@@ -25,7 +25,7 @@ body:
     id: version
     attributes:
       label: "Versión de FolderTintCM (opcional) · FolderTintCM version (optional)"
-      placeholder: "0.3.0"
+      placeholder: "0.3.1"
   - type: checkboxes
     id: privacy
     attributes:
